@@ -1,0 +1,19 @@
+html {
+  font-family: sans-serif;
+}
+body {
+  text-align: left;
+  max-width: 1000px;
+}
+h1.coming-soon-header {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+p.coming-soon-page {
+  font-weight: 500;
+}
+a.social {
+  text-decoration: none;
+  color: blue;
+}
