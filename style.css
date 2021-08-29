@@ -14,11 +14,16 @@ article.intro {
   margin: auto;
   line-height: 1.5;
 }
+h1 {
+  font-weight: 600;
+  font-size: 22px;
+}
 a {
   text-decoration: none;
   color: lightskyblue;
 }
-pre.icon {
+a.icon {
+  font-family: "Courgette", cursive;
   padding: 20px;
 }
 
@@ -38,6 +43,9 @@ a.gthb:hover {
 @media (max-width: 500px) {
   article.intro {
     font-size: 17px;
+  }
+  h1 {
+    font-size: 19px;
   }
   a.icon {
     font-size: 27px;
