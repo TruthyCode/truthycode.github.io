@@ -17,6 +17,7 @@ article {
 pre {
   background-color: rgba(0, 0, 0, 0.185);
   padding-left: 10px;
+  font-family: "Source Code Pro", monospace;
 }
 h1,
 h2 {
