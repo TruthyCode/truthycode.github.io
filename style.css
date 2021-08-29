@@ -1,0 +1,52 @@
+html {
+  background-color: rgb(51, 50, 50);
+}
+body {
+  align-items: center;
+}
+article.intro {
+  padding: 17px;
+  font-family: "Roboto Mono", monospace;
+  color: whitesmoke;
+  font-weight: normal;
+  font-size: 20px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: lightskyblue;
+}
+pre.icon {
+  padding: 20px;
+}
+
+a.icon {
+  font-size: 35px;
+  color: rgb(110, 255, 110);
+}
+a.icon:hover {
+  font-size: 40px;
+  color: rgb(252, 29, 29);
+}
+a.gthb:hover {
+  font-size: 21px;
+  color: rgb(92, 183, 240);
+}
+
+@media (max-width: 500px) {
+  article.intro {
+    font-size: 17px;
+  }
+  a.icon {
+    font-size: 27px;
+  }
+  a.icon:hover {
+    font-size: 31px;
+  }
+  a.gthb:hover {
+    font-size: 18px;
+    color: rgb(92, 183, 240);
+  }
+}
