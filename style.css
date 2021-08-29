@@ -4,7 +4,7 @@ html {
 body {
   align-items: center;
 }
-article.intro {
+article {
   padding: 17px;
   font-family: "Roboto Mono", monospace;
   color: whitesmoke;
@@ -14,9 +14,22 @@ article.intro {
   margin: auto;
   line-height: 1.5;
 }
-h1 {
+pre {
+  background-color: rgba(0, 0, 0, 0.185);
+  padding-left: 10px;
+}
+h1,
+h2 {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 a {
   text-decoration: none;
@@ -35,7 +48,7 @@ a.icon:hover {
   font-size: 40px;
   color: rgb(252, 29, 29);
 }
-a.gthb:hover {
+a.responsive-link:hover {
   font-size: 21px;
   color: rgb(92, 183, 240);
 }
@@ -44,8 +57,11 @@ a.gthb:hover {
   article.intro {
     font-size: 17px;
   }
-  h1 {
-    font-size: 19px;
+  h1,
+  h2 {
+    font-size: 21px;
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
   a.icon {
     font-size: 27px;
@@ -53,7 +69,7 @@ a.gthb:hover {
   a.icon:hover {
     font-size: 31px;
   }
-  a.gthb:hover {
+  a.responsive-link:hover {
     font-size: 18px;
     color: rgb(92, 183, 240);
   }

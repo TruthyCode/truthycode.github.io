@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <pre><a class="icon" href="#">TruthyCode</a></pre>
@@ -27,21 +33,49 @@
         My Github Profile-
         <a
           rel="noopener"
-          class="gthb"
+          class="responsive-link"
           href="https://github.com/TruthyCode"
           target="_blank"
           >My Github Page</a
         >
         <br />
-        My Python Projects -
-        <a
-          rel="noopener"
-          class="gthb"
-          href="https://gist.github.com/TruthyCode"
-          target="_blank"
-          >My Gist Page</a
-        >
       </p>
+      My Gist Profile where I upload my Projects -
+      <a
+        rel="noopener"
+        class="responsive-link"
+        href="https://gist.github.com/TruthyCode"
+        target="_blank"
+        >My Gist Page</a
+      >
+    </article>
+    <article>
+      <h2>My Python Projects</h2>
+
+      <h3>EmailClient in Python</h3>
+      <pre style="overflow-x: auto">
+        <code>
+import smtplib
+
+
+def send_email(from_addr, sender_pwd, to_addr, subject, body):
+    email_text = """\
+From: %s
+To: %s
+Subject: %s
+%s""" % (from_addr, ",".join([to_addr]) if len([to_addr]) > 1 else to_addr, subject, body)
+    try:
+        server_ssl = smtplib.SMTP_SSL("smtp.gmail.com")
+        server_ssl.ehlo()
+        server_ssl.login(from_addr, sender_pwd)
+        server_ssl.sendmail(from_addr, to_addr, email_text)
+    except Exception as ex:
+        print(f"Something went wrong\n{ex}")
+
+
+send_email("from@gmail.com", "from_pwd", ["to1@gmail.com", "to2@gmail.com", "to3@gmail.com"], "subject", "body")
+        </code>
+      </pre>
     </article>
   </body>
 </html>
