@@ -9,8 +9,8 @@ article {
   font-family: "Roboto Mono", monospace;
   color: whitesmoke;
   font-weight: normal;
-  font-size: 20px;
-  max-width: 1200px;
+  font-size: 16px;
+  max-width: 1050px;
   margin: auto;
   line-height: 1.5;
 }
@@ -38,13 +38,13 @@ code.language-python {
 h1,
 h2 {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 21px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 h3 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   padding-top: 10px;
   font-weight: 100;
 }
@@ -58,41 +58,41 @@ a.icon {
 }
 
 a.icon {
-  font-size: 35px;
-  color: rgb(110, 255, 110);
+  font-size: 31px;
+  color: rgb(51, 216, 51);
 }
 a.icon:hover {
-  font-size: 40px;
+  font-size: 32px;
   color: rgb(252, 29, 29);
 }
 a.responsive-link:hover {
-  font-size: 21px;
+  font-size: 16.1px;
   color: rgb(92, 183, 240);
 }
 
 @media (max-width: 500px) {
   article.intro,
   pre.code {
-    font-size: 17px;
+    font-size: 13px;
   }
   h1,
   h2 {
-    font-size: 21px;
+    font-size: 17px;
     padding-bottom: 15px;
     padding-top: 15px;
   }
   h3 {
-    font-size: 19px;
+    font-size: 15px;
     padding-top: 10px;
   }
   a.icon {
-    font-size: 27px;
+    font-size: 23px;
   }
   a.icon:hover {
-    font-size: 31px;
+    font-size: 27px;
   }
   a.responsive-link:hover {
-    font-size: 18px;
+    font-size: 14px;
     color: rgb(92, 183, 240);
   }
 }
