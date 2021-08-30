@@ -10,14 +10,30 @@ article {
   color: whitesmoke;
   font-weight: normal;
   font-size: 20px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   line-height: 1.5;
 }
 pre {
-  background-color: rgba(0, 0, 0, 0.185);
-  padding-left: 10px;
+  padding-bottom: 20px;
+}
+code.language-python {
+  background-color: rgba(0, 0, 0, 0.24);
   font-family: "Source Code Pro", monospace;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  background-color: rgb(63, 61, 58);
+  width: 0.7em;
+  overflow: auto;
+  height: 0.6em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 253, 250, 0.308);
+  border-radius: 2em;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 253, 250, 0.541);
 }
 h1,
 h2 {
@@ -29,8 +45,8 @@ h2 {
 h3 {
   font-weight: 600;
   font-size: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
+  font-weight: 100;
 }
 a {
   text-decoration: none;
@@ -55,7 +71,8 @@ a.responsive-link:hover {
 }
 
 @media (max-width: 500px) {
-  article.intro {
+  article.intro,
+  pre.code {
     font-size: 17px;
   }
   h1,
@@ -63,6 +80,10 @@ a.responsive-link:hover {
     font-size: 21px;
     padding-bottom: 15px;
     padding-top: 15px;
+  }
+  h3 {
+    font-size: 19px;
+    padding-top: 10px;
   }
   a.icon {
     font-size: 27px;
