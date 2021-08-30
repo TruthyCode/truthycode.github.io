@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(51, 50, 50);
+  background-color: rgb(39, 38, 38);
 }
 body {
   align-items: center;
@@ -13,11 +13,14 @@ article {
   margin: auto;
   line-height: 1.5;
 }
+hr {
+  margin: 30px;
+}
 pre {
   padding-bottom: 20px;
 }
 code.language-python {
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.37);
   font-family: "Source Code Pro", monospace;
   border-radius: 10px;
 }
@@ -52,13 +55,15 @@ a {
   color: lightskyblue;
 }
 a.icon {
-  font-family: "Courgette", cursive;
   padding-left: 5px;
 }
 
 a.icon {
   font-size: 31px;
   color: rgb(51, 216, 51);
+  font-family: "Source Code Pro", monospace;
+  font-style: normal;
+  font-weight: 1000;
 }
 a.icon:hover {
   font-size: 32px;
@@ -87,7 +92,7 @@ h3 {
     padding-top: 15px;
   }
   h3 {
-    font-size: 15px;
+    font-size: 13px;
     padding-top: 10px;
   }
   a.icon {
