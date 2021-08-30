@@ -50,6 +50,10 @@ h3 {
   padding-top: 10px;
   font-weight: 100;
 }
+ul {
+  list-style-type: circle;
+  color: rgb(156, 233, 247);
+}
 a {
   text-decoration: none;
   color: lightskyblue;
@@ -72,6 +76,10 @@ a.icon:hover {
 a.responsive-link:hover {
   font-size: 16.1px;
   color: rgb(92, 183, 240);
+}
+article.top {
+  text-align: center;
+  font-weight: 1000;
 }
 
 p,

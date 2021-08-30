@@ -67,8 +67,19 @@
     <hr />
     <article>
       <h2>My Python Projects</h2>
-
-      <h3>EmailClient in Python:-</h3>
+        <p>Table of Contents:
+            <ul>
+                <li><a class="responsive-link" href="#email-client">Email Client</a></li>
+                <li><a class="responsive-link" href="#password-manager">Password Creator and Manager</a></li>
+                <li><a class="responsive-link" href="#small-num-guess">Number Guess(Brief)</a></li>
+                <li><a class="responsive-link" href="#rock-paper-scissor">Rock Paper and Scissors Program</a></li>
+                <li><a class="responsive-link" href="#string-char-counter">Counts the number of character, whitespaces and words</a></li>
+                <li><a class="responsive-link" href="#point-class">PointClass</a></li>
+                <li><a class="responsive-link" href="#letter-counter">Print most letter in the sentence</a></li>
+                <li><a class="responsive-link" href="#large-num-guess">Number Guess(Verbose)</a></li>
+            </ul>
+        </p>
+      <h3 id="email-client">EmailClient in Python:-</h3>
       <pre class="code" style="overflow-x: auto">
         <code class="language-python">
 import smtplib
@@ -91,7 +102,7 @@ Subject: %s
 
 send_email("from@gmail.com", "from_pwd", ["to1@gmail.com", "to2@gmail.com", "to3@gmail.com"], "subject", "body")
         </code></pre>
-      <h3>Password Creator and Manager:-</h3>
+      <h3 id="password-manager">Password Creator and Manager:-</h3>
       <pre class="code" style="overflow-x: auto">
         <code class="language-python">
 
@@ -205,7 +216,7 @@ print(passwords.read())
 # The source of the file
 print(passwords.src)
         </code></pre>
-      <h3>Number Guess(Brief):-</h3>
+      <h3 id="small-num-guess">Number Guess(Brief):-</h3>
       <pre class="code" style="overflow-x: auto">
         <code class="language-python">
 from random import randint
@@ -236,7 +247,7 @@ while True:
 else:
     print("Enter a valid number!")
         </code></pre>
-      <h3>Rock Paper and Scissors Program:-</h3>
+      <h3 id="rock-paper-scissor">Rock Paper and Scissors Program:-</h3>
       <pre class="code" style="overflow-x: auto">
         <code class="language-python">
 from random import choice
@@ -267,7 +278,7 @@ print(f"""
 Score: {user_wins * 10}
 Thank You for playing...""")
         </code></pre>
-      <h3>Counts the number of character, whitespaces and words:-</h3>
+      <h3 id="string-char-counter">Counts the number of character, whitespaces and words:-</h3>
       <pre class="code" style="overflow-x: auto">
         <code class="language-python">
 user_inp = input("Start Here: ")
@@ -287,7 +298,7 @@ Characters: {letters + whitespaces}
 Whitespaces: {whitespaces}
 Words: {words}""")
         </code></pre>
-      <h3>PointClass:-</h3>
+      <h3 id="point-class">PointClass:-</h3>
       <pre class="code" style="overflow-x: auto">
         <code class="language-python">
 class Point: 
@@ -346,7 +357,7 @@ def coincide(self, other):
     other.x = self.x
     other.y = self.y
         </code></pre>
-      <h3>Print most letter in the sentence:-</h3>
+      <h3 id="letter-counter">Print most letter in the sentence:-</h3>
       <pre class="code" style="overflow-x: auto">
         <code class="language-python">
 sentence = input("Enter a Sentence: ")
@@ -372,7 +383,7 @@ except IndexError:
     print(f'The Only used letter was "{pair1[0]}" used {pair1[1]} times')
     exit()
         </code></pre>
-      <h3>Number Guess(Verbose):-</h3>
+      <h3 id="large-num-guess">Number Guess(Verbose):-</h3>
       <pre class="code" style="overflow-x: auto">
         <code class="language-python">
 import random
@@ -499,6 +510,9 @@ You Lost but you can try Again!""")
 # End of the File
         </code>
       </pre>
+      </article>
+      <article class="top">
+      <p><a class="responsive-link" href="#">&lt;-- Back To The Top --&gt;</a></p>
     </article>
   </body>
 </html>
