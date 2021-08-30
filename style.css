@@ -14,7 +14,7 @@ article {
   line-height: 1.5;
 }
 hr {
-  margin: 30px;
+  display: none;
 }
 pre {
   padding-bottom: 20px;
@@ -84,6 +84,10 @@ h3 {
   article.intro,
   pre.code {
     font-size: 13px;
+  }
+  hr {
+    display: block;
+    margin: 30px;
   }
   h1,
   h2 {
