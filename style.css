@@ -26,7 +26,7 @@ code.language-python {
   background-color: rgb(63, 61, 58);
   width: 0.7em;
   overflow: auto;
-  height: 0.6em;
+  height: 0.5em;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(255, 253, 250, 0.308);
