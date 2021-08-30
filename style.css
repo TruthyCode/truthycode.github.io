@@ -5,7 +5,6 @@ body {
   align-items: center;
 }
 article {
-  padding: 17px;
   font-family: "Roboto Mono", monospace;
   color: whitesmoke;
   font-weight: normal;
@@ -54,7 +53,7 @@ a {
 }
 a.icon {
   font-family: "Courgette", cursive;
-  padding: 20px;
+  padding-left: 5px;
 }
 
 a.icon {
@@ -70,6 +69,12 @@ a.responsive-link:hover {
   color: rgb(92, 183, 240);
 }
 
+p,
+h1,
+h2,
+h3 {
+  padding-left: 10px;
+}
 @media (max-width: 500px) {
   article.intro,
   pre.code {
