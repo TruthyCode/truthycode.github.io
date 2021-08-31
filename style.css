@@ -8,7 +8,7 @@ article {
   font-family: "Roboto Mono", monospace;
   color: whitesmoke;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 1050px;
   margin: auto;
   line-height: 1.5;
@@ -40,15 +40,15 @@ code.language-python {
 h1,
 h2 {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 23px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 h3 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 21px;
   padding-top: 10px;
-  font-weight: 100;
+  font-weight: 700;
 }
 ul {
   list-style-type: circle;
@@ -63,18 +63,18 @@ a.icon {
 }
 
 a.icon {
-  font-size: 31px;
+  font-size: 50px;
   color: rgb(51, 216, 51);
-  font-family: "Source Code Pro", monospace;
+  font-family: "Allison", cursive;
   font-style: normal;
   font-weight: 1000;
 }
 a.icon:hover {
-  font-size: 32px;
+  font-size: 51px;
   color: rgb(252, 29, 29);
 }
 a.responsive-link:hover {
-  font-size: 16.1px;
+  font-size: 18.1px;
   color: rgb(92, 183, 240);
 }
 article.top {
@@ -89,32 +89,16 @@ h3 {
   padding-left: 10px;
 }
 @media (max-width: 500px) {
-  article.intro,
-  pre.code {
-    font-size: 13px;
-  }
   hr {
     display: block;
-    margin: 30px;
+    margin: 10px;
   }
   h1,
   h2 {
-    font-size: 17px;
     padding-bottom: 15px;
     padding-top: 15px;
   }
   h3 {
-    font-size: 13px;
     padding-top: 10px;
-  }
-  a.icon {
-    font-size: 23px;
-  }
-  a.icon:hover {
-    font-size: 27px;
-  }
-  a.responsive-link:hover {
-    font-size: 14px;
-    color: rgb(92, 183, 240);
   }
 }
