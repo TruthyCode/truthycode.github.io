@@ -1,5 +1,6 @@
 html {
   background-color: rgb(39, 38, 38);
+  scroll-behavior: smooth;
 }
 body {
   align-items: center;
