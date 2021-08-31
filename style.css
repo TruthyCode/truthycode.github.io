@@ -17,12 +17,10 @@ p.social {
 }
 p.social {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.336);
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 20px;
   padding-left: 10px;
-  max-width: 1050px;
 }
 hr {
   display: none;
@@ -50,13 +48,13 @@ code.language-python {
 }
 h1,
 h2 {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 23px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 h3 {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 19px;
   padding-top: 10px;
   font-weight: 700;
@@ -66,7 +64,8 @@ ul {
   color: rgb(156, 233, 247);
 }
 li {
-  padding-bottom: 7px;
+  padding-bottom: 10px;
+  line-height: 20px;
 }
 a {
   text-decoration: none;
