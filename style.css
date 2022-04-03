@@ -7,7 +7,7 @@ body {
 }
 article,
 p.social {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: whitesmoke;
   font-weight: normal;
   font-size: 18px;
@@ -30,7 +30,7 @@ pre {
 }
 code.language-python {
   background-color: rgba(0, 0, 0, 0.37);
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
   border-radius: 10px;
 }
 ::-webkit-scrollbar {
@@ -78,7 +78,7 @@ a.icon {
 a.icon {
   font-size: 50px;
   color: rgb(51, 216, 51);
-  font-family: "Allison", cursive;
+  font-family: 'Allison', cursive;
   font-style: normal;
   font-weight: 1000;
 }
@@ -113,4 +113,22 @@ h3 {
   h3 {
     padding-top: 10px;
   }
+}
+input[type='number'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+li a span {
+  margin: 20px;
+  padding-left: 3px;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
 }
