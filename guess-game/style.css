@@ -48,11 +48,12 @@ section {
   border: 2px solid rgb(255, 248, 244);
 }
 
-h1 {
-  font-size: 100px;
-  margin-top: 30px;
+h1,
+h2 {
+  /* font-size: 100px; */
+  /* margin-top: 30px; */
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 100px;
   text-align: center;
 }
 
@@ -67,8 +68,8 @@ label; */
 
 .message {
   color: rgb(250, 250, 250);
-  padding-top: 60px;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .label-score {

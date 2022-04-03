@@ -1,4 +1,4 @@
-const randomNum = () => Math.round(Math.random() * 100);
+const randomNum = () => Math.round(Math.random() * 100) + 1;
 const displayMessage = function (message) {
   document.querySelector('.message').textContent = message;
 };
@@ -11,9 +11,42 @@ const setHighScore = function (scr) {
   document.querySelector('.highscore').textContent = scr;
 };
 
+let score = 20;
+let highScore = 0;
+let num = randomNum();
+const msg = document.querySelector('.message');
+const displayNum = document.querySelector('.display');
+const numDisplay = function () {
+  displayNum.textContent = num;
+};
+function correntNum() {
+  msg.style.color = '#07FF51';
+  msg.style.fontSize = '27px';
+  setTimeout(function () {
+    msg.style.fontSize = '25px';
+  }, 100);
+  numDisplay();
+  displayNum.style.color = '#07FF51';
+}
+
+function wrongNum() {
+  msg.style.color = 'red';
+  msg.style.fontSize = '27px';
+  setTimeout(function () {
+    msg.style.fontSize = '25px';
+  }, 100);
+}
+function invalidNum() {
+  msg.style.color = '#FFD03D';
+  msg.style.fontSize = '27px';
+  setTimeout(function () {
+    msg.style.fontSize = '25px';
+  }, 100);
+}
 const check = function () {
   const guess = Number(document.querySelector('.guess').value);
   if (!guess) {
+    invalidNum();
     if (!guess && guess !== 0) {
       displayMessage('Please enter a number');
     } else if (guess === 0) {
@@ -21,11 +54,15 @@ const check = function () {
     }
   } else if (guess === num) {
     displayMessage('Correct Number!');
+
+    correntNum();
+
     if (highScore < score) {
       highScore = score;
       setHighScore(highScore);
     }
   } else if (guess !== num) {
+    wrongNum();
     displayMessage(guess > num ? 'That is Too High!' : 'That is Too Low!');
     if (score > 0) {
       score--;
@@ -36,9 +73,8 @@ const check = function () {
   }
   document.querySelector('.guess').focus();
 };
-let score = 20;
-let highScore = 0;
-let num = randomNum();
+
+console.log(num);
 document.querySelector('.check').addEventListener('click', check);
 
 document.querySelector('.again').addEventListener('click', function () {
@@ -46,7 +82,10 @@ document.querySelector('.again').addEventListener('click', function () {
   setScore(score);
   num = randomNum();
   displayMessage('Start Guessing...');
-  document.querySelector('.guess').value = undefined;
+  document.querySelector('.guess').value = '';
+  msg.style.color = 'white';
+  displayNum.style.color = 'white';
+  displayNum.textContent = '?';
 });
 
 document.querySelector('html').addEventListener('keydown', function (e) {
