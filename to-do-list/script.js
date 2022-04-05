@@ -7,7 +7,7 @@ const AddAndRemoveItems = function () {
   if (newTask && newTask !== 'Your task goes here') {
     const taskListItem = document.createElement('li');
     const deleteBtn = document.createElement('button');
-    deleteBtn.textContent = '✅';
+    deleteBtn.textContent = '✔️';
     taskListItem.textContent = newTask;
     taskListItem.appendChild(deleteBtn);
 
@@ -17,7 +17,7 @@ const AddAndRemoveItems = function () {
 
     deleteBtn.addEventListener('click', function () {
       document.querySelector('.message').textContent =
-        `Completed the task - ${taskListItem.textContent}!`.replace('✅', '');
+        `Completed the task - ${taskListItem.textContent}!`.replace('✔️', '');
       taskListItem.remove();
     });
   } else {
